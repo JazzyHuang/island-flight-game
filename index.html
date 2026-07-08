@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="screen-orientation" content="portrait">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#87ceeb">
+  <title>Island Flight</title>
+  <script type="module" crossorigin src="./assets/index-De2IisuM.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-B7i0MdUG.css">
+</head>
+<body>
+  <div id="game-container"></div>
+
+  <div id="loading-overlay">
+    <div id="loading-content">
+      <div id="loading-ring">
+        <svg viewBox="0 0 120 120">
+          <circle class="bg" cx="60" cy="60" r="54"/>
+          <circle id="progress-circle" class="fg" cx="60" cy="60" r="54"/>
+        </svg>
+        <span id="loading-percent">0%</span>
+      </div>
+      <p id="loading-text">加载资源中...</p>
+    </div>
+  </div>
+
+  <div id="start-overlay" class="hidden">
+    <button id="start-btn">开始飞行</button>
+    <p class="hint">倾斜手机控制飞机方向</p>
+  </div>
+
+  <div id="game-ui" class="hidden">
+    <div id="score-display">
+      <span id="cloud-icon">☁</span>
+      <span id="score-value">0</span>
+    </div>
+    <div id="hold-indicator" class="hidden">
+      <span class="hold-cloud">☁</span>
+      <span class="hold-text">持有中</span>
+    </div>
+    <div id="controls-overlay">
+      <button id="ctrl-left" class="ctrl-btn" aria-label="左移">◀</button>
+      <button id="ctrl-right" class="ctrl-btn" aria-label="右移">▶</button>
+    </div>
+  </div>
+
+  <div id="float-scores"></div>
+
+  <div id="rotate-hint">
+    <div class="rotate-content">
+      <div class="rotate-icon">📱</div>
+      <p>请将手机竖屏使用</p>
+    </div>
+  </div>
+
+</body>
+</html>
